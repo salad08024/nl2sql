@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "py_nl2sql"
+version = "0.0.3.dev1"
+description = "A toolkit for converting natural language to SQL statements."
+authors = ["liangzhu <pillarliang21@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/pillarliang/py-nl2sql"
+repository = "https://github.com/pillarliang/py-nl2sql"
+
+[tool.poetry.dependencies]
+python = "^3.10.1"
+numpy = "*"
+openai = "*"
+pydantic = "*"
+python-dotenv = "*"
+faiss-cpu = "*"
+sqlalchemy = "*"
+pymysql = "*"
+poetry-core = "*"
+black = "*"
+psycopg = {extras = ["binary"], version = "^3.2.1"}
+pgvector = "^0.3.0"
+jupyter = "*"
+langchain-openai = "*"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
